@@ -20,8 +20,13 @@
                         <div class="text-danger">Это поле обязательно к заполнению</div>
                         @enderror
                         <textarea id="editor" name="content">{{ old('content') }}</textarea>
+                        <span>Выберите категорию </span>
+                        <select name="category_id">
+                            @foreach ($categories as $cat )
+                            <option value="{{ $cat->id }}">{{ $cat->title }}</option>
+                            @endforeach
+                        </select>
                         <button type="submit" class="btn btn-primary">Добавить</button>
-
                     </form>
                 </div>
             </div>

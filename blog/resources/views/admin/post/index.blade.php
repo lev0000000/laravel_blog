@@ -26,6 +26,8 @@
                         <tr>
                             <th style="width: 10px" scope="col">ID</th>
                             <th scope="col">Название</th>
+                            <th scope="col">Контент</th>
+                            <th scope="col">Категория</th>
                             <th scope="col">Действия</th>
                         </tr>
                     </thead>
@@ -34,7 +36,8 @@
                         <tr class="align-middle">
                             <td>{{ $post->id }}</td>
                             <td>{{ $post->title }}</td>
-                            <td>{{ $post->posts_count ?? 0 }}</td>
+                            <td>{{ $post->content ?? ''}}</td>
+                            <td>{{ $category[$post->category_id]['title'] ?? ''}}</td>
                             <td class="d-flex gap-4 items-center">
                                 <a href="{{ route('admin.posts.show', $post->id) }}">
                                     <i class="bi bi-eye-fill"></i> </a>
