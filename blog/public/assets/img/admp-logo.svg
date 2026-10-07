@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-labelledby="title">
+  <title id="title">ADMP</title>
+  <g fill="#fff">
+    <path fill-rule="evenodd" d="M40 200 99 40h44l59 160h-43l-11-34H94l-11 34Zm65-68h32l-16-51Z"/>
+    <path fill-rule="evenodd" d="M225 40h63c53 0 84 28 84 80s-31 80-84 80h-63Zm41 36v88h20c30 0 44-15 44-44s-14-44-44-44Z"/>
+    <path d="M397 200V40h44l40 83 40-83h44v160h-40V109l-32 66h-24l-32-66v91Z"/>
+    <path fill-rule="evenodd" d="M593 200V40h70c38 0 60 20 60 55s-22 56-60 56h-29v49Zm41-125v41h26c15 0 23-7 23-21s-8-20-23-20Z"/>
+  </g>
+</svg>

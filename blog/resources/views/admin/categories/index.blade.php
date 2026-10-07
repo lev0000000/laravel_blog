@@ -3,13 +3,13 @@
 @section('content')
 <main class="app-main">
     <!--begin::App Content Header-->
-    <div class="app-content-header d-flex flex-column gap-4">
+    <div class="app-content-header d-flex flex-column gap-4 px-5">
         <!--begin::Container-->
         <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
                 <div class="col-sm-6">
-                    <h1 class="mb-0 fs-3">Dashboard</h1>
+                    <h1 class="mb-0 fs-3">Категории</h1>
                 </div>
                 <div class="col-12">
                     <a href="{{ route('admin.categories.create') }}" class="btn btn-primary">Добавить категорию</a>
@@ -36,10 +36,17 @@
                             <td>{{ $cat->id }}</td>
                             <td>{{ $cat->title }}</td>
                             <td>{{ $cat->posts_count ?? 0 }}</td>
-                            <td>
+                            <td class="d-flex gap-4 items-center">
                                 <a href="{{ route('admin.categories.show', $cat->id) }}">
-                                    <i class="fa fa-eye bi-eye text-primary" aria-hidden="true"></i>
+                                    <i class="bi bi-eye-fill"></i> </a>
+                                <a href="{{ route('admin.categories.edit', $cat->id) }}">
+                                    <i class="bi bi-pencil"></i>
                                 </a>
+                                <form action="{{ route('admin.categories.delete', $cat->id) }}" method="delete">
+                                    <button type="submit" class="btn btn-link p-0 m-0">
+                                        <i class="bi bi-trash text-danger"></i>
+                                    </button>
+                                </form>
                             </td>
 
                         </tr>

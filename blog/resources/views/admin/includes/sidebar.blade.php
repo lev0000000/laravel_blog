@@ -6,12 +6,11 @@
     <a href="./index.html" class="brand-link">
       <!--begin::Brand Image-->
       <img
-        src="{{ asset('/assets/img/AdminLTELogo.png') }}"
+        src="{{ asset('/assets/img/admp-logo.svg') }}"
         alt="AdminLTE Logo"
-        class="brand-image opacity-75 shadow" />
+        class="brand-image" />
       <!--end::Brand Image-->
       <!--begin::Brand Text-->
-      <span class="brand-text fw-light">AdminLTE 4</span>
       <!--end::Brand Text-->
     </a>
     <!--end::Brand Link-->
@@ -45,21 +44,23 @@
         <li class="nav-item">
           <a href="{{ route('admin.categories.index') }}" class="nav-link">
             <i class="nav-icon bi bi-circle"></i>
-            <p>Categories</p>
+            <p>Категории</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('admin.tags.index') }}" class="nav-link">
+            <i class="nav-icon bi bi-circle"></i>
+            <p>Теги</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('admin.posts.index') }}" class="nav-link">
+            <i class="nav-icon bi bi-circle"></i>
+            <p>Посты</p>
           </a>
         </li>
       </ul>
       <!--end::Sidebar Menu-->
-
-      <!-- Docs CTA (bottom of sidebar) -->
-      <div class="p-3 mt-3 border-top border-secondary border-opacity-25">
-        <a
-          href="./docs/introduction.html"
-          class="btn btn-sm btn-outline-light w-100 d-flex align-items-center justify-content-center gap-2">
-          <i class="fa fa-list" aria-hidden="true"></i>
-          View Categories
-        </a>
-      </div>
     </nav>
   </div>
   <!--end::Sidebar Wrapper-->

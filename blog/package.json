@@ -18,5 +18,9 @@
     },
     "optionalDependencies": {
         "@laravel/multiplex": "^0.4.1"
+    },
+    "dependencies": {
+        "@toast-ui/editor": "^3.2.2",
+        "quill": "^2.0.3"
     }
 }

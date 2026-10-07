@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AdminLTE v4 | Dashboard</title>
+    <title>Админ панель</title>
 
     <!--begin::Theme Init (prevents flash of incorrect theme on load, #6043)-->
     <script>
@@ -105,6 +105,8 @@
         href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
         crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde@2.21.0/dist/easymde.min.css" />
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -497,6 +499,17 @@
         sparkline('#sparkline-2', [515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921]);
         sparkline('#sparkline-3', [15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21]);
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/easymde@2.21.0/dist/easymde.min.js"></script>
+
+    <script>
+        const editor = new EasyMDE({
+            element: document.getElementById('editor'),
+            forceSync: true,
+            spellChecker: false
+        });
+    </script>
+
     <!--end::Script-->
 </body>
 <!--end::Body-->
